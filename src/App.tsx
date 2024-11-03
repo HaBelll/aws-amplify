@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="message">{message}</div>
+        <div className="message">{message} - dev</div>
       </div>
     </div>
   );
