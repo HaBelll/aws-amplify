@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { Schema } from '../amplify/data/resource'; // 경로 확인
+import type { Schema } from '../amplify/data/resource';
 import { generateClient } from "aws-amplify/data";
 import './App.css';
 
