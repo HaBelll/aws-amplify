@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 기존 스타일 */
 .App {
   text-align: center;
@@ -75,4 +76,28 @@
   font-size: 1.2rem;
   color: #666;
   padding: 10px;
+=======
+/* App.css */
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #333;
+>>>>>>> bad443d615c959f33496d163ac12ac04a9d94283
 }

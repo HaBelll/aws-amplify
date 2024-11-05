@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react';
 import type { Schema } from '../amplify/data/resource';
 import { generateClient } from "aws-amplify/data";
@@ -40,3 +41,31 @@ export default function App() {
     </div>
   );
 }
+=======
+import React, { useState, useEffect} from 'react';
+import './App.css';
+
+function App() {
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () =>{
+      const response = await fetch('https://al3fbe8b17.execute-api.ap-northeast-2.amazonaws.com/Prod/hello');
+      const data = await response.json();
+      console.log(data);
+      setMessage(data.message);
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <div className="App">
+      <div className="container">
+        <div className="message">{message}</div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> bad443d615c959f33496d163ac12ac04a9d94283
